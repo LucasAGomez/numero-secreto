@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do número secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Jogo do numero secreto</h1>
+        <p id="texto">Tente descobrir o número entre 1 e 100</p>
+        <section class="interacoes">
+            <input type="number" id="palpite" placeholder="Digite seu chute" min="1" max="100">
+            <button id="btn-chutar" onclick="chutar()">Chutar</button>
+            <button id="btn-reiniciar" onclick="reiniciar()" disabled>Reiniciar</button>
+        </section>
+        <section class="estatisticas">
+            <div>
+                <label for="chutes">Chutes: </label>
+                <p id="chutes"></p>
+            </div>
+            <div>
+                <label for="tentativas">Tentativas: </label>
+                <p id="tentativas"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
